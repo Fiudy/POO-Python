@@ -1,0 +1,27 @@
+class Animal:
+    def locomove(self):
+        return "Método de Locomoção é, "
+
+class Peixe(Animal):
+    def locomove(self) -> str:
+        return "Um peixe nada."
+
+
+class Elefante(Animal):
+    def locomove(self) -> str:
+        return super().locomove() + "Um elefante anda."
+
+
+class Passaro(Animal):
+    def locomove(self) -> str:
+        return super().locomove() + "Um pássaro voa."
+
+
+peixe = Peixe()
+elefante = Elefante()
+passaro = Passaro()
+
+print(peixe.locomove() )
+print(elefante.locomove() )
+print(passaro.locomove() )
+print(passaro.locomove() )
